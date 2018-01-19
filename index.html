@@ -125,33 +125,29 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    
-    
     <script>
-        // google maps
+    // google maps
 
-        function initMap() {
-        var uluru = {lat: 40.7364, lng: -74.0724};
+    function initMap() {
+        var uluru = { lat: 40.7364, lng: -74.0724 };
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 18,
-          center: uluru
+            zoom: 18,
+            center: uluru
         });
         var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+            position: uluru,
+            map: map
         });
-      }
+    }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlm7ivGVi1GAw1sKn0ZenKtSITicxRUmE&callback=initMap">
     </script>
     <script src="assets/javascript/key.js"></script>
     <script src="assets/javascript/app.js"></script>
-    
 </body>
 
 </html>
