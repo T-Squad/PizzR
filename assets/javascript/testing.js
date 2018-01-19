@@ -1,36 +1,6 @@
-// app.js file goes here
-
-// set variables for API Keys
-
-// YELP API INFORMATION
-
-// GEOLOCATION API INFORMATION
-
-// GOOGLE MAPS API INFORMATION
-
-// ======================================= //
-
-// google maps
-
-// function initMap() {
-//     let uluru = {
-//         lat: lat,
-//         long: long
-//     }
-//     let map = new google.maps.Map(document.getElementById('map'), {
-//         zoom: 4,
-//         center: uluru
-//     });
-//     let marker = new google.maps.Marker({
-//         position: uluru,
-//         map: map
-//     });
-// }
-
-
 // LOCATION 
 
-function init() {
+function init() {    
 
     // we want to get the location from our user
     let appLocation;
@@ -43,23 +13,32 @@ function init() {
         let lat = appLocation[0];
         let long = appLocation[1];
         $('#locationInfo').text(data.city);
+     
 
-        // google maps
+    var map;
+    var marker;
+    var mylatlng =  {lat: 40.748999, lng: -73.985677};
+    function initMap(){
+      map = new
+      google.maps.Map(document.getElementById('googlemap'),{
+                 center:mylatlng,
+                 zoom:16
+                 });
+      marker = new google.maps.Marker({
+        animation:google.maps.Animation.DROP,
+        position:mylatlng,
+        map:map,
+        draggable:false
 
-        // function initMap() {
-        //     let uluru = {
-        //         lat: lat,
-        //         long: long
-        //     }
-        //     let map = new google.maps.Map(document.getElementById('map'), {
-        //         zoom: 4,
-        //         center: uluru
-        //     });
-        //     let marker = new google.maps.Marker({
-        //         position: uluru,
-        //         map: map
-        //     });
-        // }
+      });
+
+      console.log(map)
+        console.log(marker)
+        console.log(mylatlng)
+        
+    }
+
+
 
         // yelp api key
         const YELP_API = window.yelpKey
@@ -105,5 +84,5 @@ function init() {
         });
     });
 }
-
+// start the app
 init();
