@@ -61,6 +61,8 @@ function init() {
         //     });
         // }
 
+        // proxyURL +
+
         // yelp api key
         const YELP_API = window.yelpKey
 
@@ -71,7 +73,7 @@ function init() {
 
         const yelpURL = 'https://api.yelp.com/v3/businesses/search?term=pizza&latitude=' + lat + '&longitude=' + long + '&limit=10';
         $.ajax({
-            url: proxyURL + yelpURL,
+            url: yelpURL,
             method: 'GET',
             // headers: {
             //  authorization: 'Bearer' + YELP_API
