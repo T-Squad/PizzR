@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -85,8 +86,9 @@
                 <div class="card">
                     <div id="map"></div>
                     <!--            <img class="card-img-top" src="assets/images/sampleMap.jpg" alt="Card image cap"> -->
-                    <div class="card-block">
+                    <div class="card-block" id="placesInfo">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
                     </div>
                 </div>
             </div>
@@ -129,8 +131,8 @@
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script>
-    // google maps
+    <!-- <script>
+    google maps
 
     function initMap() {
         var uluru = { lat: 40.7364, lng: -74.0724 };
@@ -145,7 +147,9 @@
     }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlm7ivGVi1GAw1sKn0ZenKtSITicxRUmE&callback=initMap">
-    </script>
+    </script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4SY9ZoJsatUeEcL76DhBNKDzdlyu5PvI&libraries=places&callback=initMap"></script>
+    <script src="assets/javascript/google.js"></script>
     <script src="assets/javascript/key.js"></script>
     <script src="assets/javascript/app.js"></script>
 </body>
