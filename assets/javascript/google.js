@@ -1,37 +1,24 @@
-// This example requires the Places library. Include the libraries=places
-// parameter when you first load the API. For example:
-// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+// google api key
+const googleAPIKey = window.googleKey;
 
-// lat = 40.6769 long = -74.2155
+// set variables for the map
+let map;
+let infowindow;
 
-const googleAPIKey = 'AIzaSyC4SY9ZoJsatUeEcL76DhBNKDzdlyu5PvI';
+// create a function to request location and search query for google places
+function initMap() {    
 
-var map;
-var infowindow;
-
-// $.getJSON('https://ipinfo.io', function(data) {
-
-//         console.log(data);
-//         appLocation = data.loc.split(',');
-//         console.log(appLocation[0]);
-//         console.log(appLocation[1]);
-//         let lat = appLocation[0];
-//         let long = appLocation[1];
-//         $('#locationInfo').text(data.city);
-
-
-function initMap() {
-
-    
-
-        const pyrmont = { lat: 40.6769, lng: -74.2155 };
+        const apploc = { lat: 40.6769, lng: -74.2155 }; // we had to hard code the long and lat for now...
+        // in our request we cant to find pizzerias in a 500 feet radius of our current location
         const request = {
-            location: pyrmont,
+            location: apploc,
             radius: 500,
             query: 'pizzeria'
         }
         map = new google.maps.Map(document.getElementById('map'), {
-            center: pyrmont,
+            // map centers in at this location
+            center: apploc,
+            // set zoom of the map to 13
             zoom: 13
         });
         infowindow = new google.maps.InfoWindow();

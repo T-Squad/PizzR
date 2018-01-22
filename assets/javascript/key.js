@@ -6,4 +6,4 @@ window.yelpKey = 'tSxkGjdnpSIye3J5wMx-ytgDOG8UekJfaYcukHwiKlA9k64JWO5sZEYHLMdNi3
 
 // google maps api key
 
-window.googleKey = 'AIzaSyBlm7ivGVi1GAw1sKn0ZenKtSITicxRUmE';
+window.googleKey = 'AIzaSyC4SY9ZoJsatUeEcL76DhBNKDzdlyu5PvI';
