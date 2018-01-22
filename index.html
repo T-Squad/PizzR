@@ -2,156 +2,195 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="assets/images/favicon.ico" id="titleIcon">
+    <link>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>pizzr</title>
-    <!-- page icon-->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <!-- <link rel="icon" href="assets/images/Banner2.png" id="titleIcon"><link> -->
-    <!-- Required meta tags -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- homebrew css -->
-    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <!-- font-awesome -->
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/">
+    <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
+    <script src="assets/javascript/googleMapApi.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Pizza Time!</title>
 </head>
 
 <body>
-    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+    <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><i class="fa fa-cutlery" aria-hidden="true"></i>pizzr</a>
+        <a class="navbar-brand" href="#"><i class="fa fa-cutlery" aria-hidden="true"></i>pizza</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#map">Map</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="joinup.html">Join Up</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- Jumbotron start-->
-    <div class="jumbotron jumbotron-fluid pizza__landing">
+    <!-- <div class="jumbotron jumbotron-fluid pizza__landing">
         <div class="container">
+            <h1 class="display-4">pizzr</h1>
+            <img src="assets/images/pizzrGray.png" alt="pizza" class="display-4">
+        </div>
+    </div> -->
+   <div class="row mainBanner">
+      <div class="col-md-12">
+        <img src="assets/images/bannerBottom.png" alt="banner">
+      </div>
+       <div class="container">
             <h1 class="display-4">pizzr</h1>
         </div>
     </div>
     <!-- jumbotron End-->
     <!-- main contents Start-->
     <div class="container">
-        <div class="row introRow">
-            <div class="col-lg-12">
-                <h1>pizzr /peet-ser/ noun - a smart tool that will calculate how many steps from deliciousness you are. </h1>
-                <p>What is hands down a general favorite food? Pizza! And what can you do when you a craving that favorite of all favorites? Search for the closest slice! Our app “pizzr” /peet-sur/ will find you the closest slice to your current location and tell you how many steps away from deliciousness you are.</p>
-                <!-- Search button (temp) -->
-                <!-- <div id="searchBtn">
-                    <nav class="navbar navbar-light bg-faded justify-content-between">
-                        <a class="navbar-brand">Search</a>
-                        <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Location">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Find it!</button>
-                        </form>
-                    </nav>
-                </div> -->
+        <div id="map">
+            <div class="row introRow">
+                <div class="col-lg-12">
+                    <h1>P I Z Z A!</h1>
+                    <p>What is hands down a general favorite food? Pizza! And what can you do when you a craving that favorite of all favorites? Search for the closest slice! Our app “pizzr” (Pete-Zer) will find you the closest slice to your current location and tell you how many steps away from deliciousness you are.</p>
+                    <!-- Search button (temp) -->
+                </div>
             </div>
         </div>
         <hr>
-        <!-- Business & Map info -->
         <div id="secondaryContents">
-            <!-- Store Info-->
-            <div id="placeInfo">
-                <div class="card" style="width: 25rem;">
-                    <img class="card-img-top" src="" alt="">
-                    <div class="card-block">
-                        <h4 class="card-title"></h4>
-                        <p class="card-text"></p>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            <div class="row seconinfoRow">
+                <div class="col-md-7 first">
+                    <!-- image,hours,info -->
+                    <div class="row firstRow">
+                        <div class="col-md-7 placeImgHolder">
+                            <img src="assets/images/sampleMap.jpg" alt="storeImage" class="placeImg"></div>
+                        <div class="col-md-5 secondCol">
+                            <div class="row placeName">name</div>
+                            <div class="row placeAddr">Addr</div>
+                            <div class="row placePhone">Phone</div>
+                            <div class="row placehours">hours</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Map info-->
-            <div id="sideBarMap">
-                <div class="card">
-                    <div id="map"></div>
-                    <!--            <img class="card-img-top" src="assets/images/sampleMap.jpg" alt="Card image cap"> -->
-                    <div class="card-block" id="placesInfo">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        
-                    </div>
+                <div class="col-md-1 middle"></div>
+                <div class="col-md-4 second">
+                    <img src="assets/images/sampleMap.jpg" alt="map">
                 </div>
             </div>
         </div>
         <hr>
         <!-- slide div -->
-        <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img class="d-block img-fluid" src="assets/images/slideimage1.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block img-fluid" src="assets/images/slideimage2.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block img-fluid" src="assets/images/slideimage3.jpg" alt="Third slide">
+        <div class="wrapper" id="about">
+            <div class="container">
+                <div class="row aboutUs">
+                    <div class="col-lg-12">
+                        <h1> About Us </h1>
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-        </div> -->
-        <!-- slide div End-->
-    </div>
-    <!-- container End-->
-    <!-- Footer Start-->
-    <div class="footer-copyright">
-        <div class="container-fluid">
-            © 2018 Copyright: <a href="https://www.MDBootstrap.com"></a>
+            <div class="infocontainer">
+                <div class="row infoRow">
+                    <div class="col-lg-4 colsize">
+                        <h2> Back End Team </h2>
+                           <div class="card cardinfo" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/images/ralph.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 colsize">
+                        <h2> Back End Team </h2>
+                        <div class="card cardinfo" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/images/jason.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 colsize">
+                        <h2> Back End Team </h2>
+                        <div class="card cardinfo" style="width: 19rem;">
+                            <img class="card-img-top" src="assets/images/alex.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row infoRow">
+                    <div class="col-lg-4 colsize">
+                        <h2> Front End Team </h2>
+                        <div class="card cardinfo" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/images/yongok.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p>Hi! I'm Kay Kim</p>
+                                <div class="socialIcon">
+                                    <div class="linkicons">
+                                        <div class="giticon">
+                                            <a href="https://github.com/" target="_blank"><img src="http://cdn.mysitemyway.com/icons-watermarks/flat-rounded-square-white-on-black/foundation/foundation_social-github/foundation_social-github_flat-rounded-square-white-on-black_512x512.png" alt="git"></a>
+                                        </div>
+                                        <div class="linkedinicon">
+                                            <a href="https://www.linkedin.com/in/kay-kim-93139ba4/" target="_blank"><img src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAANyAAAAJGRlZTNlZDQwLTk4YTItNDA1MS04MzBjLWJmNGQ5M2RmZGUxYw.png" alt="linkedin"></a>
+                                        </div>
+                                        <div class="stackflowicon">
+                                            <a href="https://stackoverflow.com/users/story/8722569#" target="_blank"><img src="http://sourcingrecruitment.info/wp-content/uploads/2015/05/stackoverflow.png" alt="stackflow"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 colsize">
+                        <h2>Pizza Boy! </h2>
+                        <div class="card cardinfo" style="width: 18rem;">
+                            <img src="assets/images/pizza.gif" class="pizzaman" alt="pizza man">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 colsize">
+                        <h2> Front End Team </h2>
+                        <div class="card cardinfo" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/images/muqsit.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <!-- <script>
-    google maps
-
-    function initMap() {
-        var uluru = { lat: 40.7364, lng: -74.0724 };
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 18,
-            center: uluru
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-        });
-    }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlm7ivGVi1GAw1sKn0ZenKtSITicxRUmE&callback=initMap">
-    </script> -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4SY9ZoJsatUeEcL76DhBNKDzdlyu5PvI&libraries=places&callback=initMap"></script>
-    <script src="assets/javascript/google.js"></script>
-    <script src="assets/javascript/key.js"></script>
-    <script src="assets/javascript/app.js"></script>
+        <!-- slide div End-->
+        <!-- container End-->
+        <!-- Footer Start-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2018 Copyright
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- <script src="assets/javascript/keys.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <!-- google Api -->
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAEd_mUzKcF5UNICeESQY8G5PlZUk0CRA&callback=initMap" async defer></script>
+        <!-- google Api End-->
+        <!--    <script src="assets/javascript/app.js"></script> -->
 </body>
 
 </html>
