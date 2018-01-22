@@ -1,200 +1,236 @@
-/* stylesheet */
-
-body {
-    color: white;
-}
-.jumbotron {
+/* .jumbotron {
     margin: 0 auto;
     text-align: center;
-    background-image: url('../images/Banner.png');
-    height: 300px;
+    background-image: url('../images/bannerBottom.png');
+    background-repeat: no-repeat;
+    height: 333px;
+    width: 100%;
     color: #fff;
-    opacity: .80;
+    opacity: .90;
+    position: relative;
+    margin-top:60px;
+} */
+.mainBanner{
+    width:100%;
+    height:333px;
+    margin:0 auto;
+    opacity:.9;
+    position:relative;
+    margin-top:60px;
 }
-.wrapper{
-  margin-bottom:30px;
-  height:1180px;
-  max-width: 940px;
-  margin: 0 auto;
+.mainBanner img{
+    width:100%;
+    height:333px;
 }
+
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    text-align:center;
+    position:fixed;
+    top:0;
+    z-index:10;
+}
+
+.display-4 {
+    font-family: 'Leckerli One', cursive;
+    font-size: 80px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    position: absolute;
+    left:5%;
+    bottom: 30%;
+    
+}
+
+.wrapper {
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 30px;
+    padding:20px 0 20px 0;
+}
+
 .pizza__landing h1 {
     padding: 100px;
     text-align: center;
     font-weight: 800;
     text-decoration: uppercase;
-    color: red;
 }
-#placeInfo {
-    float: left;
-}
-#sideBarMap {
-    float: right;
-    width: 550px;
-}
-.card {
-    padding: 15px 15px 15px 15px;
-    margin-bottom: 20px;
-    
-}
-.footer-copyright {
-    clear: both;
-    text-align: center;
-    height: 100px;
-    line-height: 100px;
-    background: silver;
-}
-.submitBtn {
-    float: right;
-    margin: 10px auto;
-}
-.form-group {
-    float: left;
-}
-#searchBtn {
-  float:right;  
-}
-.aboutUs h1{
-  font-style:italic;
-  text-align:center;
-}
-.infocontainer{
-  background:#f4f5f7;
-  box-shadow:10px 10px 5px #d8d6d6 ;
-  padding:15px 0 15px 0;
-  border-radius:10px 10px 10px 10px;
-  text-align: center;
-  width:1080px;
-}
-.infoRow h2{
-  margin: 10px 0 15px 0;
-}
-#secondaryContents {
-    height: 450px;
-    clear: both;
-}
-.carousel-item img{
-    border-radius: 10px 10px 10px 10px;
-    max-height: 600px;
-    width:100%;
-    margin-bottom:50px;
-}
-.introduction{
-    text-align:center;
-    line-height: 20px;
-}
-.resultContainer{
-    height:600px;
-    background: #f9fafc;
-    overflow:hidden;
-   
-}
-.infoContainer{
-    height:1080px;
-    box-shadow:20px 20px gray;
-    background:black;
- 
-}
-.searchInput{
-    float:left;
-    border:1px solid black;
-    width:25%;
-}
-.introRow{
-  text-align:center;
-  line-height: 2;
-  font-size:20px;
-}
-.introRow h1{
-  font-style:italic;
-}
-/*joing up page CSS*/
-/*sign up box*/
-* {box-sizing: border-box}
-/* Full-width input fields */
- .containerJ input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-.containerJ input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-/* Set a style for all buttons */
-.containerJ button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-  opacity: 0.9;
-}
-.containerJ button:hover {
-  opacity:1;
-  background-color:yellow;
-}
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
-}
+
 .cardinfo{
   margin:0 auto;
   padding: 15px 15px 15px 15px;
   margin-bottom:20px;
 }
 
-#map {
-	width: 100%;
-	height: 400px;
-	background-color: grey;
+.footer-copyright {
+    clear: both;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    background: white;
+    position: relative;
 }
 
-/*#googlemap{
-  height:333px;
-  width:510px;
-}*/
-/* RALPH - I commented out the following
-#titleIcon{
-  border-radius:15px 15px 15px 15px;
-} 
-*/
-.joinupContainer{
-  width:1080px;
-  margin:0 auto;
-  margin-bottom:20px;
+.aboutUs h1,
+.introRow h1 {
+    font-style: italic;
+    text-align: center;
 }
-.containerJ{
-  padding:10px 10px 10px 10px;
-  margin:0 auto;
+
+.introRow {
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    padding:30px 0 30px 0;
+}
+
+.infocontainer {
+    background: white;
+    /*  box-shadow:10px 10px 5px #d8d6d6 ; */
+    padding: 15px 0 15px 0;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    /*   box-shadow:20px 20px gray; */
+    width: auto;
+}
+
+.infoRow h2 {
+    margin: 10px 0 15px 0;
+}
+
+#secondaryContents {
+    height: auto;
+    width: auto;
+    clear: both;
+    margin: 0 auto;
+    padding:25px 0 25px 0;
+}
+
+hr {
+    border: 3px solid #d6d7d8;
+}
+
+.container {
+    padding: 16px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+@media (max-width:892px) {
+
+    .placeInfoCol {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .sideBarMapCol {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .secondaryContents {
+        height: auto;
+    }
+}
+
+#titleIcon {
+    border-radius: 15px 15px 15px 15px;
+}
+
+.linkicons img {
+    height: 60px;
+    width: 60px;
+}
+
+.giticon,
+.linkedinicon,
+.stackflowicon img {
+
+    float: left;
+    margin-right: 5px;
+}
+
+.pizzaman {
+    height: 256px;
+    width: 256px;
+}
+
+.first {
+    background: white;
+    height: 400px;
+    width: 60%;
+}
+
+.second {
+    background: yellow;
+    height: 400px;
+    width: 35%;
+}
+
+.middle {
+    background: white;
+    height: 400px;
+    width: 5%;
+}
+
+.placImg {
+
+    height: 500px;
+    width: 100%;
+}
+
+.placeImgHolder {
+    background: blue;
+    height: 400px;
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+    margin:0 auto;
+    line-height:400px;
+}
+.placeImgHolder img, .second img {
+    height:350px;
+    width:100%;
+}
+
+.secondCol {
+    background: white;
+    height: 400px;
+    width: 50%;
+}
+
+.placeName {
+    border-radius: 0 10px 0 0;
+}
+
+.placehours {
+    border-radius: 0 0 10px 0;
+}
+
+.second {
+
+    border-radius: 10px 10px 10px 10px;
+    margin:0 auto;
+    line-height:400px;
+}
+
+.secondCol .row {
+    border: 1px solid black;
+    height: 25%;
+}
+
+@media (max-width:892px) {
+    .first,
+    .second {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .middle {
+        height: 0;
+    }
 }
