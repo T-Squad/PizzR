@@ -1,200 +1,132 @@
-/* stylesheet */
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+
+* {
+    position: relative;
+}
 
 body {
-    color: white;
+    background-color: whitesmoke;
 }
-.jumbotron {
-    margin: 0 auto;
-    text-align: center;
-    background-image: url('../images/Banner.png');
-    height: 300px;
-    color: #fff;
-    opacity: .80;
+
+body::-webkit-scrollbar {
+    width: 1em;
 }
-.wrapper{
-  margin-bottom:30px;
-  height:1180px;
-  max-width: 940px;
-  margin: 0 auto;
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
-.pizza__landing h1 {
-    padding: 100px;
-    text-align: center;
-    font-weight: 800;
-    text-decoration: uppercase;
-    color: red;
+
+body::-webkit-scrollbar-thumb {
+    background-color: #B50000;
+    outline: 1px solid slategrey;
 }
-#placeInfo {
-    float: left;
+
+
+.results::-webkit-scrollbar {
+    width: 1em;
 }
-#sideBarMap {
-    float: right;
-    width: 550px;
+
+.results::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
-.card {
-    padding: 15px 15px 15px 15px;
-    margin-bottom: 20px;
-    
+
+.results::-webkit-scrollbar-thumb {
+    background-color: #B50000;
+    outline: 2px solid #000;
 }
-.footer-copyright {
-    clear: both;
-    text-align: center;
-    height: 100px;
-    line-height: 100px;
-    background: silver;
-}
-.submitBtn {
-    float: right;
-    margin: 10px auto;
-}
-.form-group {
-    float: left;
-}
-#searchBtn {
-  float:right;  
-}
-.aboutUs h1{
-  font-style:italic;
-  text-align:center;
-}
-.infocontainer{
-  background:#f4f5f7;
-  box-shadow:10px 10px 5px #d8d6d6 ;
-  padding:15px 0 15px 0;
-  border-radius:10px 10px 10px 10px;
-  text-align: center;
-  width:1080px;
-}
-.infoRow h2{
-  margin: 10px 0 15px 0;
-}
-#secondaryContents {
-    height: 450px;
-    clear: both;
-}
-.carousel-item img{
-    border-radius: 10px 10px 10px 10px;
-    max-height: 600px;
-    width:100%;
-    margin-bottom:50px;
-}
-.introduction{
-    text-align:center;
-    line-height: 20px;
-}
-.resultContainer{
-    height:600px;
-    background: #f9fafc;
-    overflow:hidden;
-   
-}
-.infoContainer{
-    height:1080px;
-    box-shadow:20px 20px gray;
-    background:black;
- 
-}
-.searchInput{
-    float:left;
-    border:1px solid black;
-    width:25%;
-}
-.introRow{
-  text-align:center;
-  line-height: 2;
-  font-size:20px;
-}
-.introRow h1{
-  font-style:italic;
-}
-/*joing up page CSS*/
-/*sign up box*/
-* {box-sizing: border-box}
-/* Full-width input fields */
- .containerJ input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-.containerJ input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-/* Set a style for all buttons */
-.containerJ button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-  opacity: 0.9;
-}
-.containerJ button:hover {
-  opacity:1;
-  background-color:yellow;
-}
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
+
+.pizza-banner {
     width: 100%;
-  }
-}
-.cardinfo{
-  margin:0 auto;
-  padding: 15px 15px 15px 15px;
-  margin-bottom:20px;
+    height: 100%;
+    top: -64px;
 }
 
+.pizza-container {
+  height: 65vh;
+}
+
+.nav-bar-about {
+  color: #b50000;
+}
+
+.fa-angle-double-up {
+  color: #fff;
+}
+
+.album {
+  background-color: #ccc;
+}
+
+.jumbotron {
+    background-color: #fff;
+}
+
+header {
+    margin-bottom: 0;
+}
+
+.navbar-brand p {
+    font-family: 'Leckerli One', cursive;
+    font-size: 32px;
+    margin: 0 auto;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 64px;
+    font-family: 'Dosis', sans-serif;
+}
+
+#typed {
+    font-family: 'Leckerli One', cursive;
+    color: #B50000;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #B50000, rgba(0, 0, 0, 0));
+}
 #map {
-	width: 100%;
-	height: 400px;
-	background-color: grey;
+    background-color: #666;
+    border: 1px solid #000;
+    width: 100%;
+    height: 100vh;
 }
 
-/*#googlemap{
-  height:333px;
-  width:510px;
-}*/
-/* RALPH - I commented out the following
-#titleIcon{
-  border-radius:15px 15px 15px 15px;
-} 
-*/
-.joinupContainer{
-  width:1080px;
-  margin:0 auto;
-  margin-bottom:20px;
+.results {
+    border-radius: 1px solid #000;
+    width: 100%;
 }
-.containerJ{
-  padding:10px 10px 10px 10px;
-  margin:0 auto;
+
+.results img {
+    border-radius: 100px;
+}
+
+.results p {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: .5px;
+    font-size: 18px;
+}
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #B50000;
+}
+
+footer p {
+    margin-bottom: .25rem;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: .5px;
+    font-size: 13px;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }

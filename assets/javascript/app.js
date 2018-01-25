@@ -24,7 +24,7 @@ function init() {
         const proxyURL = 'https://shielded-hamlet-43668.herokuapp.com/';
 
         // concatenate the long and lat into the yelp api url. With a limit of 10 search results for Pizzeria
-        const yelpURL = 'https://api.yelp.com/v3/businesses/search?term=pizzeria&latitude=' + lat + '&longitude=' + long + '&limit=10';
+        const yelpURL = 'https://api.yelp.com/v3/businesses/search?term=pizzeria&latitude=' + lat + '&longitude=' + long + '&limit=20';
         $.ajax({
             // concatenate the proxyURL with the yelpURL for the CORS issue
             url: proxyURL + yelpURL,
@@ -46,15 +46,20 @@ function init() {
                 console.log(data.businesses[i].name);
                 console.log('-----------------------');
 
+                // let colDiv = $('<div>').addClass('col-md-4');
+                // let cardDiv = $('<div>').addClass('card mb-4 box-shadow');
+
+                // colDiv.append(cardDiv);
+
                 // append the information to the DOM
-                $("#results").append('<img src="' + data.businesses[i].image_url + '" style="width:20rem; height:20rem; margin:3%;">');
-                $("#results").append("<p><strong>Name:</strong> " + data.businesses[i].name + "</p>");
+                $(".results").append('<img class="img-fluid" src="' + data.businesses[i].image_url + '" style="width:15rem; height:15rem; margin:3%;">');
+                $(".results").append('<p><strong>Name:</strong> ' + data.businesses[i].name + '</p>');
 
-                $("#results").append("<p><strong>Address:</strong> " + data.businesses[i].location.display_address + "</p>");
+                $(".results").append("<p><strong>Address:</strong> " + data.businesses[i].location.display_address + "</p>");
 
-                $("#results").append("<p><strong>Phone:</strong> " + data.businesses[i].display_phone + "</p>");
-                $("#results").append("<p><strong>Hours:</strong> " + data.businesses[i].name + "</p>");
-                $("#results").append("<hr>");
+                $(".results").append("<p><strong>Phone:</strong> " + data.businesses[i].display_phone + "</p>");
+                // $("#results").append("<p><strong>Hours:</strong> " + data.businesses[i].name + "</p>");
+                $(".results").append("<hr>");
             };
         });
     });
@@ -97,23 +102,23 @@ function callback(results, status) {
 
             let placeId = 'https://maps.googleapis.com/maps/api/place/details/json?placeid=' + results[i].place_id + '&key=' + googleAPIKey
 
-            // console.log(placeId);
-            console.log('========================================');
-            // console.log(results[i]);
+            // // console.log(placeId);
+            // console.log('========================================');
+            // // console.log(results[i]);
 
-            // console.log(results[i].name);
-            // console.log(results[i].place_id);
+            // // console.log(results[i].name);
+            // // console.log(results[i].place_id);
 
-            // business image
+            // // business image
 
-            let photoReference = results[i].photos.reference;
+            // let photoReference = results[i].photos.reference;
 
-            console.log(photoReference);
-            console.log('========================================');
+            // console.log(photoReference);
+            // console.log('========================================');
 
 
 
-            let newDiv = $('<div>')
+            // let newDiv = $('<div>')
 
         }
     }
@@ -121,9 +126,11 @@ function callback(results, status) {
 }
 
 function createMarker(place) {
+    let pizzr = './assets/images/favicon.ico'
     let placeLoc = place.geometry.location;
     let marker = new google.maps.Marker({
         map: map,
+        icon: pizzr,
         position: place.geometry.location
     });
 
@@ -137,3 +144,40 @@ initMap();
 
 // start the app
 init();
+
+$(function(){
+    $("#typed").typed({
+        // 'pizzr /peet-ser/ noun - a smart tool that will calculate how many steps from deliciousness you are.'
+        strings: ['Cheese?', 'Sauce?', 'Pepperoni?', 'Pizza?'],
+        // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+        stringsElement: null,
+        // typing speed
+        typeSpeed: 30,
+        // time before typing starts
+        startDelay: 1200,
+        // backspacing speed
+        backSpeed: 20,
+        // time before backspacing
+        backDelay: 500,
+        // loop
+        loop: true,
+        // false = infinite
+        loopCount: 5,
+        // show cursor
+        showCursor: false,
+        // character for cursor
+        cursorChar: "|",
+        // attribute to type (null == text)
+        attr: null,
+        // either html or text
+        contentType: 'html',
+        // call when done callback function
+        callback: function() {},
+        // starting callback function before each string
+        preStringTyped: function() {},
+        //callback for every typed string
+        onStringTyped: function() {},
+        // callback for reset
+        resetCallback: function() {}
+    });
+});
