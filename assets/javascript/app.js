@@ -17,6 +17,7 @@ function init() {
         // create a variable for longitude
         let long = appLocation[1];
 
+         
         // yelp api key
         const YELP_API = window.yelpKey
 
@@ -24,7 +25,7 @@ function init() {
         const proxyURL = 'https://shielded-hamlet-43668.herokuapp.com/';
 
         // concatenate the long and lat into the yelp api url. With a limit of 10 search results for Pizzeria
-        const yelpURL = 'https://api.yelp.com/v3/businesses/search?term=pizzeria&latitude=' + lat + '&longitude=' + long + '&limit=20';
+        const yelpURL = 'https://api.yelp.com/v3/businesses/search?term=pizzeria&latitude=40.730771&longitude=-74.065707&limit=20';
         $.ajax({
             // concatenate the proxyURL with the yelpURL for the CORS issue
             url: proxyURL + yelpURL,
@@ -75,7 +76,7 @@ let infowindow;
 // create a function to request location and search query for google places
 function initMap() {
 
-    const apploc = { lat: 40.6769, lng: -74.2155 }; // we had to hard code the long and lat for now...
+    const apploc = { lat: 40.730771, lng: -74.065707 }; // we had to hard code the long and lat for now...
     // in our request we cant to find pizzerias in a 500 feet radius of our current location
     const request = {
         location: apploc,
