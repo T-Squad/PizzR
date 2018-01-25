@@ -1,0 +1,237 @@
+/* RALPH - I commented out the following START
+
+body {
+    color: white;
+}
+RALPH - I commented out the following START */
+
+.jumbotron {
+    margin: 0 auto;
+    text-align: left;
+    background-image: url('../images/Banner.png');
+    background-color: white;
+    height: 600px;
+    color: #fffff;
+    opacity: ;
+}
+/* RALPH - I commented out the following START
+.wrapper{
+
+  margin-bottom:30px;
+  height:1180px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+RALPH - I commented out the following START */
+.pizza__landing h1 {
+    padding: 100px;
+    text-align: center;
+    font-weight: 800;
+    text-decoration: uppercase;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#placeInfo {
+    float: left;
+}
+
+#sideBarMap {
+    float: right;
+    width: 550px;
+}
+
+.card {
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 20px;
+    width:550px;
+}
+#googlemap{
+  height:520px;
+  width:520px;
+}
+
+.footer-copyright {
+    clear: both;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    background: white;
+}
+
+/* RALPH - I commented out the following START
+.submitBtn {
+    float: right;
+    margin: 10px auto;
+}
+
+.form-group {
+    float: left;
+}
+
+#searchBtn {
+  float:right;  
+}
+
+.aboutUs h1{
+  font-style:italic;
+  text-align:center;
+}
+
+
+.infocontainer{
+  background:#f4f5f7;
+  box-shadow:10px 10px 5px #d8d6d6 ;
+  padding:15px 0 15px 0;
+  border-radius:10px 10px 10px 10px;
+  text-align: center;
+  width:1080px;
+}
+.infoRow h2{
+  margin: 10px 0 15px 0;
+
+}
+#secondaryContents {
+    height: 450px;
+    clear: both;
+}
+.carousel-item img{
+    border-radius: 10px 10px 10px 10px;
+    max-height: 600px;
+    width:100%;
+    margin-bottom:50px;
+}
+.introduction{
+    text-align:center;
+    line-height: 20px;
+
+}
+.resultContainer{
+    height:600px;
+    background: #f9fafc;
+    overflow:hidden;
+   
+}
+.infoContainer{
+    height:1080px;
+    box-shadow:20px 20px gray;
+    background:black;
+ 
+}
+.searchInput{
+    float:left;
+    border:1px solid black;
+    width:25%;
+
+}
+.introRow{
+  text-align:center;
+  line-height: 2;
+  font-size:20px;
+}
+.introRow h1{
+  font-style:italic;
+}
+
+/*joing up page CSS*/
+/*sign up box*/
+/* RALPH - I commented out the following START
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+/*RALPH - I commented out the following START
+ .containerJ input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.containerJ input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+/*RALPH - I commented out the following START
+.containerJ button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.containerJ button:hover {
+  opacity:1;
+  background-color:yellow;
+}
+
+/* Extra styles for the cancel button */
+/* RALPH - I commented out the following START
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+/* RALPH - I commented out the following START
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+/* RALPH - I commented out the following START
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+/* RALPH - I commented out the following START
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+.cardinfo{
+  margin:0 auto;
+  padding: 15px 15px 15px 15px;
+  margin-bottom:20px;
+}
+/* 
+
+#titleIcon{
+  border-radius:15px 15px 15px 15px;
+} 
+
+
+.joinupContainer{
+  width:1080px;
+  margin:0 auto;
+  margin-bottom:20px;
+
+}
+ .containerJ{
+  padding:10px 10px 10px 10px;
+  margin:0 auto;
+} */
