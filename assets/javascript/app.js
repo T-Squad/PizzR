@@ -8,10 +8,12 @@ function init() {
         console.log(data);
         // split data.loc into 2 seperate strings
         appLocation = data.loc.split(',');
-        console.log('-----------------------');
-        console.log(appLocation[0]);
-        console.log(appLocation[1]);
-        console.log('-----------------------');
+
+        // console.log('-----------------------');
+        // console.log(appLocation[0]);
+        // console.log(appLocation[1]);
+        // console.log('-----------------------');
+
         // create a variable for latitude
         let lat = appLocation[0];
         // create a variable for longitude
@@ -39,18 +41,16 @@ function init() {
             }
 
         }).done(function(data) {
-            console.log(data);
-            console.log('-----------------------');
+            // console.log(data);
+            // console.log('-----------------------');
+
             // create a for loop and loop through data.business to get the needed information
             for (let i = 0; i < data.businesses.length; i++) {
-                console.log(i);
-                console.log(data.businesses[i].name);
-                console.log('-----------------------');
+                // console.log(i);
+                // console.log(data.businesses[i].name);
+                // console.log('-----------------------');
 
-                // let colDiv = $('<div>').addClass('col-md-4');
-                // let cardDiv = $('<div>').addClass('card mb-4 box-shadow');
-
-                // colDiv.append(cardDiv);
+                
 
                 // append the information to the DOM
                 $(".results").append('<img class="img-fluid" src="' + data.businesses[i].image_url + '" style="width:15rem; height:15rem; margin:3%;">');
@@ -98,29 +98,15 @@ function callback(results, status) {
 
     if (status === google.maps.places.PlacesServiceStatus.OK) {
         for (let i = 0; i < results.length; i++) {
-            createMarker(results[i]);
-            console.log(results.length);
-
+            createMarker(results[i]);            
+            // console.log(results.length);
             let placeId = 'https://maps.googleapis.com/maps/api/place/details/json?placeid=' + results[i].place_id + '&key=' + googleAPIKey
 
             // // console.log(placeId);
             // console.log('========================================');
             // // console.log(results[i]);
-
             // // console.log(results[i].name);
             // // console.log(results[i].place_id);
-
-            // // business image
-
-            // let photoReference = results[i].photos.reference;
-
-            // console.log(photoReference);
-            // console.log('========================================');
-
-
-
-            // let newDiv = $('<div>')
-
         }
     }
 
@@ -141,6 +127,7 @@ function createMarker(place) {
     });
 }
 
+// start the map
 initMap();
 
 // start the app
